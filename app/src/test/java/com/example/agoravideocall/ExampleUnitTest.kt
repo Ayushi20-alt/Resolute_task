@@ -10,6 +10,6 @@ package com.example.agoravideocall
 class ExampleUnitTest {
 
     fun addition_isCorrect() {
-        
+
     }
 }
