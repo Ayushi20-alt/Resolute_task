@@ -63,7 +63,7 @@ class SignUpfrag : Fragment() {
         auth.createUserWithEmailAndPassword(inputmail, inputpass).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     // Sign in success, lets move to another activity then
-                  findNavController().navigate(R.id.action_signUpfrag_to_mainActivity)
+                  findNavController().navigate(R.id.action_signUpfrag_to_preotpfrag)
                     Toast.makeText(activity,
                         "Success.",
                         Toast.LENGTH_SHORT).show()

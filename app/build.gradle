@@ -19,6 +19,9 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+        viewBinding {
+            enabled = true
+        }
     }
 
 
@@ -39,8 +42,8 @@ android {
 
     buildFeatures {
         compose true
-        viewBinding true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion "1.4.1"
         kotlinCompilerVersion '1.5.21'

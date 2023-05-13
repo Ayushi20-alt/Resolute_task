@@ -23,12 +23,33 @@
         android:label="fragment_sign_upfrag"
         tools:layout="@layout/fragment_sign_upfrag" >
         <action
-            android:id="@+id/action_signUpfrag_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_signUpfrag_to_preotpfrag"
+            app:destination="@id/preotpfrag" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.example.agoravideocall.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/preotpfrag"
+        android:name="com.example.agoravideocall.preotpfrag"
+        android:label="fragment_preotpfrag"
+        tools:layout="@layout/fragment_preotpfrag" >
+        <action
+            android:id="@+id/action_preotpfrag_to_otpfrag"
+            app:destination="@id/otpfrag" />
+        <argument
+            android:name="itemId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpfrag"
+        android:name="com.example.agoravideocall.otpfrag"
+        android:label="fragment_otpfrag"
+        tools:layout="@layout/fragment_otpfrag" >
+        <action
+            android:id="@+id/action_otpfrag_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
 </navigation>
