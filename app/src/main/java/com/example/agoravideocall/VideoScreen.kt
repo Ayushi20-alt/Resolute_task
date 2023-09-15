@@ -17,6 +17,7 @@ import io.agora.agorauikit_android.AgoraVideoViewer
 @Composable
 fun VideoScreen(
     roomName: String,
+    // navigate up is used to leave the current call and move back
     onNavigateUp: () -> Unit = {},
     viewModel: VideoViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
 ){

@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/loginFrag"
-        android:name="com.example.agoravideocall.loginFrag"
+        android:name="com.example.agoravideocall.auth.loginFrag"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFrag_to_signUpfrag"
             app:destination="@id/signUpfrag" />
         <action
-            android:id="@+id/action_loginFrag_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_loginFrag_to_profile_frag"
+            app:destination="@id/profile_frag" />
     </fragment>
     <fragment
         android:id="@+id/signUpfrag"
-        android:name="com.example.agoravideocall.SignUpfrag"
+        android:name="com.example.agoravideocall.auth.SignUpfrag"
         android:label="fragment_sign_upfrag"
         tools:layout="@layout/fragment_sign_upfrag" >
         <action
@@ -33,7 +33,7 @@
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/preotpfrag"
-        android:name="com.example.agoravideocall.preotpfrag"
+        android:name="com.example.agoravideocall.auth.preotpfrag"
         android:label="fragment_preotpfrag"
         tools:layout="@layout/fragment_preotpfrag" >
         <action
@@ -45,11 +45,28 @@
     </fragment>
     <fragment
         android:id="@+id/otpfrag"
-        android:name="com.example.agoravideocall.otpfrag"
+        android:name="com.example.agoravideocall.auth.otpfrag"
         android:label="fragment_otpfrag"
         tools:layout="@layout/fragment_otpfrag" >
         <action
-            android:id="@+id/action_otpfrag_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_otpfrag_to_profile_frag"
+            app:destination="@id/profile_frag" />
     </fragment>
+    <fragment
+        android:id="@+id/profile_frag"
+        android:name="com.example.agoravideocall.profile_frag"
+        android:label="fragment_profile_frag"
+        tools:layout="@layout/fragment_profile_frag" >
+        <action
+            android:id="@+id/action_profile_frag_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_profile_frag_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.agoravideocall.mapsActivity"
+        android:label="activity_maps2"
+        tools:layout="@layout/activity_maps2" />
 </navigation>

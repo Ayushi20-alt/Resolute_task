@@ -1,4 +1,4 @@
-package com.example.agoravideocall
+package com.example.agoravideocall.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.example.agoravideocall.R
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -60,7 +60,7 @@ class loginFrag : Fragment() {
                 if (task.isSuccessful) {
                     // Sign in success, navigate to mainActivity
 
-                    findNavController().navigate(R.id.action_loginFrag_to_mainActivity)
+                    findNavController().navigate(R.id.action_loginFrag_to_profile_frag)
                     Toast.makeText(activity,
                         "Success.",
                         Toast.LENGTH_SHORT).show()

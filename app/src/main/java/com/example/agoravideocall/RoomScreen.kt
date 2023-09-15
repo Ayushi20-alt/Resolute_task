@@ -30,6 +30,7 @@ fun RoomScreen(
             onNavigate("video_screen/$name")
         }
     }
+    // UI
     Column(
         modifier = Modifier.fillMaxSize(),
        verticalArrangement = Arrangement.Center,
